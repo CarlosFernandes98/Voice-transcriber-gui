@@ -144,6 +144,7 @@ class App(ctk.CTk):
             write(wav_temp, self.fs, audio_array)
 
             # Converte para MP3
+            os.makedirs("audios", exist_ok=True)
             mp3_output = "audios/gravacao_microfone.mp3"
             audio = AudioSegment.from_wav(wav_temp)
             audio.export(mp3_output, format="mp3")
