@@ -1,0 +1,9 @@
+
+whisper
+torch 
+customtkinter
+openai-whisper
+sounddevice scipy
+pydub
+ffmpeg-python
+numpy 
